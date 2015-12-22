@@ -22,18 +22,28 @@ public class Queue_Array {
 			this.array= new int [capacity]; 
 		}
 
-		public void dequeue()
+		public int dequeue()
 		{
-			
+			if(front==0)
+				System.out.println("sdad");
+				
+			else
+			{
+				front++;
+				int newele=array[front];
+				if(front==rear)
+				{
+					front=0;
+					rear=0;
+				}
+				else
+					front++;
+				
+				return newele;
+			}
+			return capacity;
 		}
 		
-		public boolean isFull(){
-			if(rear==(capacity-1))
-			{
-				return true;
-			}
-			return false;
-		}
 
 		public int getCapacity() {
 			return capacity;

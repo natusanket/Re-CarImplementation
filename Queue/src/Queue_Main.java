@@ -5,7 +5,7 @@ public class Queue_Main {
 		
 			Queue_Array arr=new Queue_Array(5);
 			if(arr.enqueue(2))
-				System.out.println("sdsf");
+				System.out.println("Successfully enqueued");
 					
 	}
 
