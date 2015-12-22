@@ -8,10 +8,13 @@ public class Queue_Array {
 		public boolean enqueue(int element)
 		{
 			 if (rear <= capacity - 1) {  
+				 
 				 array[rear]=element;
+				 rear++;
 				   return true;
 			 }
-			 return false;
+			 else
+				 return false;
 		}
 		
 		public Queue_Array(int capacity) {
@@ -55,7 +58,13 @@ public class Queue_Array {
 		
 		public void display()
 		{
-			
+			for(int i=front;i<rear;i++)
+			{
+				
+				System.out.print(" "+array[i]);
+				
+			}
+				
 		}
 	
 }
