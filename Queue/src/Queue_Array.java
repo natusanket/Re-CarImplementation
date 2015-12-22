@@ -25,26 +25,21 @@ public class Queue_Array {
 			this.array= new int [capacity]; 
 		}
 
-		public int dequeue()
+		public void dequeue()
 		{
-			if(front==0)
-				System.out.println("sdad");
-				
-			else
+			
+			
+			if(front<rear)
 			{
 				front++;
-				int newele=array[front];
-				if(front==rear)
-				{
-					front=0;
-					rear=0;
-				}
-				else
-					front++;
+				System.out.println("Element "+array[front-1]+" dequeued");
 				
-				return newele;
 			}
-			return capacity;
+			else
+			{
+				System.out.println("Underflow");
+			}
+			
 		}
 		
 
@@ -58,13 +53,14 @@ public class Queue_Array {
 		
 		public void display()
 		{
+			System.out.println("Elements in the queue are");
 			for(int i=front;i<rear;i++)
 			{
 				
 				System.out.print(" "+array[i]);
 				
 			}
-				
+			System.out.println();	
 		}
 	
 }
