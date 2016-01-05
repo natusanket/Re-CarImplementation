@@ -10,7 +10,7 @@ public class Queue_AList extends Queue_methods {
 	
 		public boolean enqueue(int element)
 		{
-			a.add(10);
+			a.add(element);
 			
 			return false;
 			
@@ -32,7 +32,7 @@ public class Queue_AList extends Queue_methods {
 			}
 			else
 			{
-				a.remove(1);
+				a.remove(0);
 			}
 			
 			

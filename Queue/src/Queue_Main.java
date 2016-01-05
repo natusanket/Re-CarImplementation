@@ -16,6 +16,9 @@ public class Queue_Main {
 			m.display();*/
 			
 			aList.enqueue(15);
+			aList.enqueue(20);
+			aList.display();
+			aList.dequeue();
 			aList.display();
 			
 			
