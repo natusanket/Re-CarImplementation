@@ -1,5 +1,5 @@
 
-public class Queue_Array {
+public class Queue_Array extends Queue_methods {
 
 	int capacity,front,rear;
 	int array[];
@@ -29,14 +29,20 @@ public class Queue_Array {
 		{
 			
 			
-			if(front<rear)
+			int i;
+			
+			if(rear>=0)
 			{
-				front++;
-				System.out.println("Element "+array[front-1]+" dequeued");
+				for(i=0;i<rear;i++)
+					array[i]=array[i+1];
+				
+				rear--;
+				System.out.println("Element dequeued");
 				
 			}
 			else
 			{
+				
 				System.out.println("Underflow");
 			}
 			
